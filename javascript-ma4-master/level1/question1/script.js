@@ -1,0 +1,3 @@
+function alertEvent() {
+alert("success");	
+}

@@ -1,0 +1,33 @@
+1. What is the DOM?
+The DOM is the "master" document for all our code. It serves as a controller between HTML, CSS and Javascript.
+When we're altering our code through Javascript for instance, we don't manipulate the actual HTML or CSS document, we manipulate what's stored in the DOM.
+
+2. List three methods to manipulate the DOM.
+a) addEventListener()
+b) getElementById
+c) innerHTML
+
+3. What is an asynchronous call?
+An asynchronous call is something we can use to let code run outside of the main call. If we are calling an API which we know respond slowly, and are not critical
+for our code, we can run this call in a single thread. Now we don’t wait for it to load and slowing down the rest of the pageload.
+
+4. Briefly explain what the sources tab in Chromes Developers Tools does.
+The sources tab are a center for where we can see which documents are linked to a webpage. index.html, script.js, styles.css etc. We can also see external links to images and so on.
+We also have tools here like Breakpoints that can go through our code stepwise when we are looking for bugs for instance.
+
+5. What is a JavaScript promise?
+A Javascript promise is something we can use to handle events for e.g. API calls. We set it up so that it handles both success and failures, and we can build our next code based on the response.
+In many ways it works like an IF statement, but with advanced functionality.
+
+6. What is an API?
+An API is a way to send and receive data. We can have both internal and external API's. One of the many good reasons to use this is that the creator can control which data we can access, this is especially important for external ones.
+As an example we could speak about API's from health services. The user may access all the data, but the doctor may be restricted to only relevant parts for a certain case.
+Nowadays we use API's in very many things. Like embedding social media or displaying local weather on our websites.
+
+7. What is a JavaScript Event?
+A Javascript event is something that triggers an action. For instance, when clicking a button on website, we want this or that to happen.
+When the user has been inactive for so long, we may want to force log him out, or stop an action that takes a heavy load on our server.
+
+8. What is event bubbling?
+It's to ensure that an event doesn’t fire on a parent element when the one we want to call fails. For instance, if we deleted something on a webpage and the event failed, it could just go and delete the next item that fits the criteria’s.
+To prevent this, we add a method called stopPropagation() that makes sure we stop, rather than fulfilling the task wrongly.
